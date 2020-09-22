@@ -18,7 +18,7 @@ function configToCss(config) {
 }
 
 module.exports = plugin.withOptions(
-  ({ modifiers = ['sm', 'lg', 'xl', '2xl'], className = 'prose', stopClassName = 'no-prose } = {}) => {
+  ({ modifiers = ['sm', 'lg', 'xl', '2xl'], className = 'prose', stopClassName = 'no-prose' } = {}) => {
     return function ({ addComponents, theme, variants }) {
       const config = theme('typography', {})
 
